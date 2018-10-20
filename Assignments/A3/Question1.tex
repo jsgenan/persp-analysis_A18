@@ -1,0 +1,87 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{geometry}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1.25in}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{\footnotesize\textsl{Page \thepage\ of \pageref{LastPage}}}
+\renewcommand\headrulewidth{0pt}
+\renewcommand\footrulewidth{0pt}
+\usepackage[format=hang,font=normalsize,labelfont=bf]{caption}
+\usepackage{listings}
+\lstset{frame=single,
+  language=Python,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{harvard}
+\usepackage{setspace}
+\usepackage{float,color}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=red,urlcolor=blue}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{derivation}{Derivation} % Number derivations on their own
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition} % Number propositions on their own
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+%\numberwithin{equation}{section}
+\bibliographystyle{aer}
+\newcommand\ve{\varepsilon}
+\newcommand\boldline{\arrayrulewidth{1pt}\hline}
+
+
+\begin{document}
+
+\begin{flushleft}
+  \textbf{\large{Problem Set \#2 Question 3}} \\
+  MACS 30000, Dr. Evans \\
+  Nan Ge
+\end{flushleft}
+
+\vspace{5mm}
+
+In responding to the question as to how could computational simulation contribute to sociology researches, Sabrina Moretti introduces four widely applied simulation techniques: system dynamics, multiagent systems, cellular automata, and genetic algorithms.
+
+These simulation methods play important roles in exploring sociological theories. As a language for expressing theories, computational simulation serves as a bridge between natural language and mathematical language. It enables us to formalize our delicate theory about human behavior and social interaction into accurate mathematical models, and translate the complicated derived mathematical functions into real-life scenarios. Not only are the start and end of an inquiry made easier, computational simulation also serves as a handy tool for studying complex systems. Universal rules may not apply in a chaos and complex system, but with simulation, we could explore "the specific conditions that cause a meaningful change in the behavior of the system".  Moreover, sometimes the collective properties of a system cannot be inferred from knowledge about agents. Simulation can help us study these emergent properties when the dimension of problem evolves from simplicity and complexity. Last but not least, when it's impossible to directly observe the process in interest, simulation is a great tool to experiment on theories. We could even use simulation to extend the existing theory to extreme conditions. Here, the genetic information is social norm or cultural belief that is passed down both vertically, from generation to generation, and horizontally, between agents of the same generation.
+
+Applications are exciting, yes, but the paper also cautions about the restrictions of computational simulation methods. One of the fundamental pitfalls is its validity. A simulation is deduction from the theory it's based on, which is usually very different from the real world. Therefore,  the validity of a simulation is determined from two components, the validity of the theory and from the validity of the computational tools. The simulation itself doesn't speak for the correspondence between theory and data. Given the dilemma of measurement in social science studies, we could use a "Turning Test" to establish the validity of a simulation. That is, we consider a simulation to be valid, if the input and output of a simulation are not distinguishable from the empirical data.
+
+One fundamental characteristic of computational simulation is its highlight of dynamic feedbacks in a system. Given specific changes in conditions, we could observe how does the system transfer from one equilibrium to another. In all these simulation methods, we use the theories about individual behavior and social interaction to develop models of agents that react to complex and dynamic circumstances, whose simulated behaviors are later aggregated to the group level. For example, sociologists have been employing genetic algorithms to study game theory. The basic setup is human rationality, where people prefer interacting with others if the relationship is beneficial to themselves. In a repeated game, all the agents share some common knowledge, and the strategies in previous stages are carried into the next stage, similar to information in chromosomes in the nature. When we change the conditions in a model, such as the punishment and rewards, complete or incomplete information, players in a game will change their strategies accordingly. As a result, we could observe equilibriums shifting from conspiracy to betrayal. In this example, we are more concerned about the dynamic feedbacks than the static equilibriums.
+
+Another interesting question in political science is the relationship between welfare system and people's working choices. The underlying assumption is that people work hard to earn happy lives for themselves and their families. However, in many welfare countries, mostly in the northern Europe, the lower bound is very high. Most people could enjoy a decent life, even without working. It might be interesting to use genetics algorithms to study how does the welfare system influence people's choices at work, and hence their belief in a just world. 
+
+
+\end{document}
