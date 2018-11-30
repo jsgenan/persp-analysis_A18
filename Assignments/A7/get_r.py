@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import numpy as np
 
 def get_r(K, L, alpha, Z, delta):
@@ -21,3 +22,16 @@ K2 = np.array([90.5, 130.2, 141.7, 140.0, 135.8])
 L2 = np.array([76.5, 82.2, 85.7, 83.0, 79.8])
 r2 = get_r(K2, L2, alpha2, Z2, delta2)
 print(r2)
+=======
+'''
+------------------------------------------------------------------------
+This module contains the function get_r()
+------------------------------------------------------------------------
+'''
+
+
+def get_r(K, L, alpha, Z):
+    r = alpha + Z * (L / K) ** alpha
+
+    return r
+>>>>>>> upstream/master
